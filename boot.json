@@ -1,86 +1,73 @@
 {
-    "name": "Cheat-Lyra",
-    "version": "1.0.0",
-    "styleFileList": [
-    ],
-    "scriptFileList": [
-    ],
-    "tweeFileList": [
-    ],
-    "imgFileList": [
-    ],
-    "additionFile": [
-        "README.md"
-    ],
-    "addonPlugin": [
-      {
-        "modName": "TweeReplacer",
-        "addonName": "TweeReplacerAddon",
-        "modVersion": "^1.2.0",
-        "params": [
-          {
-            "passage": "StoryCaption",
-            "findString": "and $cheatdisable is \"f\" or $debug is 1",
-            "replace": "or $debug is 1",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Widgets variablesStart2",
-            "findString": "<<set $feats.locked to true>>",
-            "replace": " ",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Widgets variablesVersionUpdate",
-            "findString": "<<set $feats.locked to true>>",
-            "replace": " ",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Widgets Settings",
-            "findString": "<<set $feats.locked to true>>",
-            "replace": " ",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Island Build Simple Decor",
-            "findString": "Util.escape($island[$island.home].decoration).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-            "replace": "Util.escape($island[$island.home].decoration)",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Museum Horse Safe Word",
-            "findString": "Util.escape($wintersafeword).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-            "replace": "Util.escape($wintersafeword)",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Furniture Shop Papers",
-            "findString": "Util.escape(_chosenPosterCustom).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-            "replace": "Util.escape(_chosenPosterCustom)",
-            "debug": false,
-            "all": true
-          },
-          {
-            "passage": "Furniture Shop Papers",
-            "findString": "Util.escape(_chosenWallpaperCustom).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-            "replace": "Util.escape(_chosenWallpaperCustom)",
-            "debug": false,
-            "all": true
-          }
-        ]
-      }
-    ],
-    "dependenceInfo": [
-      {
-        "modName": "TweeReplacer",
-        "version": "^1.2.0"
-      }
-    ]
-  }
+  "name": "Cheat-Lyra",
+  "version": "1.1.0",
+  "styleFileList": [],
+  "scriptFileList": [],
+  "tweeFileList": [],
+  "imgFileList": [],
+  "additionFile": ["README.md"],
+  "addonPlugin": [
+    {
+      "modName": "TweeReplacer",
+      "addonName": "TweeReplacerAddon",
+      "modVersion": "^1.2.0",
+      "params": [
+        {
+          "passage": "StoryCaption",
+          "findString": "and $cheatdisable is \"f\" or $debug is 1",
+          "replace": "or $debug is 1",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Widgets variablesStart2",
+          "findString": "<<set $feats.locked to true>>",
+          "replace": " ",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Widgets variablesVersionUpdate",
+          "findString": "<<set $feats.locked to true>>",
+          "replace": " ",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Widgets Settings",
+          "findString": "<<set $feats.locked to true>>",
+          "replace": " ",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Island Build Simple Decor",
+          "findString": "Util.escape($island[$island.home].decoration).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
+          "replace": "Util.escape($island[$island.home].decoration)",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Museum Horse Safe Word",
+          "findString": "Util.escape($wintersafeword).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
+          "replace": "Util.escape($wintersafeword)",
+          "debug": false,
+          "all": true
+        },
+        {
+          "passage": "Widgets Furniture",
+          "findString": "Util.escape(_customHanging).replace(/\\[/g, \"[\").replace(/\\]/g, \"]\")",
+          "replace": "Util.escape(_customHanging)",
+          "debug": false,
+          "all": true
+        }
+      ]
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "TweeReplacer",
+      "version": "^1.2.0"
+    }
+  ]
+}
