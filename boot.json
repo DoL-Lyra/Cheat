@@ -1,6 +1,6 @@
 {
   "name": "Cheat-Lyra",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "styleFileList": [],
   "scriptFileList": [],
   "tweeFileList": [],
@@ -42,22 +42,22 @@
         },
         {
           "passage": "Island Build Simple Decor",
-          "findString": "Util.escape($island[$island.home].decoration).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-          "replace": "Util.escape($island[$island.home].decoration)",
+          "findRegex": "Util\\.escape\\((.*)\\)\\.replace\\(.*\\).replace\\(.*\\)",
+          "replace": "Util.escape($1)",
           "debug": false,
           "all": true
         },
         {
           "passage": "Museum Horse Safe Word",
-          "findString": "Util.escape($wintersafeword).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-          "replace": "Util.escape($wintersafeword)",
+          "findRegex": "Util\\.escape\\((.*)\\)\\.replace\\(.*\\).replace\\(.*\\)",
+          "replace": "Util.escape($1)",
           "debug": false,
           "all": true
         },
         {
           "passage": "Widgets Furniture",
-          "findString": "Util.escape(_customHanging).replace(/\\[/g, \"&#91;\").replace(/\\]/g, \"&#93;\")",
-          "replace": "Util.escape(_customHanging)",
+          "findRegex": "Util\\.escape\\((.*)\\)\\.replace\\(.*\\).replace\\(.*\\)",
+          "replace": "Util.escape($1)",
           "debug": false,
           "all": true
         }
@@ -67,7 +67,7 @@
   "dependenceInfo": [
     {
       "modName": "TweeReplacer",
-      "version": "^1.2.0"
+      "version": "^1.6.0"
     }
   ]
 }
